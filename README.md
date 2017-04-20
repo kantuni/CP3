@@ -1,3 +1,3 @@
-# Competitive Programming 3: The New Lower Bound of Programming Contests
+# Solutions to [CP3](https://cpbook.net/) Problems and Exercises
 
 ### Chapter 1
