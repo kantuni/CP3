@@ -1,7 +1,9 @@
-**Exercise 1.1.2:** Analyze the time complexity of the naive complete search solution by
+**Exercise 1.1.2:**  
+Analyze the time complexity of the naive complete search solution by
 uncompetitive programmer A above to understand why it receives the TLE verdict!
 
-**Answer:** Running time of the naive complete search is
+**Answer:**  
+Running time of the naive complete search is
 
 ```mathematica
 C(2N, 2) * C(2N - 2, 2) * ... * C(2, 2) = O(2N!)
