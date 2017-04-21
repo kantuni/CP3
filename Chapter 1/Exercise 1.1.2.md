@@ -6,7 +6,7 @@ uncompetitive programmer A above to understand why it receives the TLE verdict!
 Running time of the naive complete search is
 
 ```mathematica
-C(2N, 2) * C(2N - 2, 2) * ... * C(2, 2)
+C(2N, 2) * C(2N - 2, 2) * ... * C(2, 2) = 2N! / 2^N
 ```
 
 As 1 ≤ N ≤ 8, the worst case running time will be when N = 8.
