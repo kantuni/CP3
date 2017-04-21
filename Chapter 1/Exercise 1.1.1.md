@@ -1,7 +1,8 @@
-**Exercise 1.1.1:** The greedy strategy of the uncompetitive programmer A above actually
+### Exercise 1.1.1
+The greedy strategy of the uncompetitive programmer A above actually
 works for the sample test case shown in Figure 1.1. Please give a better counter example!
 
-**Answer:**
+### Answer
 
 ```
 2
