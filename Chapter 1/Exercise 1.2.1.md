@@ -19,4 +19,3 @@ this book—all the techniques required to solve these problems are discussed in
 | 10717 | Mint                 |                        | Section 8.4   |
 | 11512 | GATTACA              | String Processing      | Section 6.6   |
 | 10065 | Useless Tile Packers | Computational Geometry | Section 7.3.7 |
-
