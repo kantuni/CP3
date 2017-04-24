@@ -44,7 +44,7 @@ Please answer the following questions below using your current knowledge about c
    - (a) Test if n! % m == 0.
    - **(b) The naive approach above will not work, use:  Number Theory.**
 
-8. Question 4, but with a larger set of points: N ≤ 1M and one additional constraint:The points are randomly scattered on a 2D plane.
+8. Question 4, but with a larger set of points: N ≤ 1M and one additional constraint: The points are randomly scattered on a 2D plane.
 
    - (a) The complete search mentioned in question 3 can still be used.
    - (b) The naive approach above will not work, use: ____ (Section 7.3.7).
