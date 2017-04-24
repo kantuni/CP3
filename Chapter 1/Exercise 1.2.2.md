@@ -2,17 +2,17 @@
 
 Please answer the following questions below using your current knowledge about classic algorithms and their time complexities. After you have finished reading this book once, it may be beneficial to attempt this exercise again.
 
-1. There are n webpages (1 ≤ n ≤ 10M). Each webpage i has a page rank ri. You want to pick the top 10 pages with the highest page ranks. Which method is better?
+1. There are n webpages (1 ≤ n ≤ 10M). Each webpage i has a page rank r<sub>i</sub>. You want to pick the top 10 pages with the highest page ranks. Which method is better?
 
    - (a)  Load all n webpages’ page rank to memory, sort (Section 2.2) them in descending page rank order, obtaining the top 10.
    - **(b) Use a priority queue data structure (a heap)**
 
 2. Given an M × N integer matrix Q (1 ≤ M, N ≤ 30), determine if there exists a sub-matrix of Q of size A × B (1 ≤ A ≤ M, 1 ≤ B ≤ N) where mean(Q) = 7.
 
-   - **(a)  Try all possible sub-matrices and check if the mean of each sub-matrix is 7. This algorithm runs in O(M<sup>3</sup> × N<sup>3</sup>).**
-   - (b)  Try all possible sub-matrices, but in O(M<sup>2</sup> ×N<sup>2</sup>) with this technique: ____
+   - **(a) Try all possible sub-matrices and check if the mean of each sub-matrix is 7. This algorithm runs in O(M<sup>3</sup> × N<sup>3</sup>).**
+   - (b) Try all possible sub-matrices, but in O(M<sup>2</sup> ×N<sup>2</sup>) with this technique: ____
 
-3. Given a list L with 10K integers, you need to frequently obtain sum(i, j), i.e. thesum of L[i] + L[i+1] + ...+ L[j]. Which data structure should you use?
+3. Given a list L with 10K integers, you need to frequently obtain sum(i, j), i.e. the sum of L[i] + L[i+1] + ...+ L[j]. Which data structure should you use?
 
    - (a) Simple Array (Section 2.2).
    - **(b) Simple Array pre-processed with Dynamic Programming (Section 2.2 & 3.5).**
@@ -42,7 +42,7 @@ Please answer the following questions below using your current knowledge about c
 7. You want to test if the factorial of n, i.e. n! is divisible by an integer m. 1 ≤ n ≤ 10000. What should you do?
 
    - (a) Test if n! % m == 0.
-   - **(b) The naive approach above will not work, use:  Number Theory.**
+   - **(b) The naive approach above will not work, use: Number Theory.**
 
 8. Question 4, but with a larger set of points: N ≤ 1M and one additional constraint: The points are randomly scattered on a 2D plane.
 
