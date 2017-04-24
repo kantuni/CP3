@@ -2,9 +2,9 @@
 
 Please answer the following questions below using your current knowledge about classic algorithms and their time complexities. After you have finished reading this book once, it may be beneficial to attempt this exercise again.
 
-1. There are n webpages (1 ≤ n ≤ 10M). Each webpage i has a page rank ri. You wantto pick the top 10 pages with the highest page ranks. Which method is better?
+1. There are n webpages (1 ≤ n ≤ 10M). Each webpage i has a page rank ri. You want to pick the top 10 pages with the highest page ranks. Which method is better?
 
-   - (a)  Load all n webpages’ page rank to memory, sort (Section 2.2) them in descendingpage rank order, obtaining the top 10.
+   - (a)  Load all n webpages’ page rank to memory, sort (Section 2.2) them in descending page rank order, obtaining the top 10.
    - **(b) Use a priority queue data structure (a heap)**
 
 2. Given an M × N integer matrix Q (1 ≤ M, N ≤ 30), determine if there exists a sub-matrix of Q of size A × B (1 ≤ A ≤ M, 1 ≤ B ≤ N) where mean(Q) = 7.
@@ -21,12 +21,12 @@ Please answer the following questions below using your current knowledge about c
    - (f) Binary Indexed (Fenwick) Tree (Section 2.4.4).
    - (g) Suffix Tree (Section 6.6.2) or its alternative, Suffix Array (Section 6.6.4).
 
-4. Given a set S of N points randomly scattered on a 2D plane (2 ≤ N ≤ 1000), findtwo points ∈ S that have the greatest separating Euclidean distance. Is an O(N<sup>2</sup>) complete search algorithm that tries all possible pairs feasible?
+4. Given a set S of N points randomly scattered on a 2D plane (2 ≤ N ≤ 1000), find two points ∈ S that have the greatest separating Euclidean distance. Is an O(N<sup>2</sup>) complete search algorithm that tries all possible pairs feasible?
 
    - **(a) Yes, such complete search is possible.**
    - (b) No, we must find another way. We must use: ____
 
-5. You have to compute the shortest path between two vertices on a weighted DirectedAcyclic Graph (DAG) with |V|,|E| ≤ 100K. Which algorithm(s) can be used in atypical programming contest (that is, with a time limit of approximately 3 seconds)?
+5. You have to compute the shortest path between two vertices on a weighted Directed Acyclic Graph (DAG) with |V|,|E| ≤ 100K. Which algorithm(s) can be used in a typical programming contest (that is, with a time limit of approximately 3 seconds)?
 
    - (a) Dynamic Programming (Section 3.5, 4.2.5, & 4.7.1).
    - (b) Breadth First Search (Section 4.2.2 & 4.4.2).
@@ -34,7 +34,7 @@ Please answer the following questions below using your current knowledge about c
    - (d) Bellman Ford’s (Section 4.4.4).
    - (e) Floyd Warshall’s (Section 4.5).
 
-6. Which algorithm produces a list of the first 10K prime numbers with the best timecomplexity? (Section 5.5.1)
+6. Which algorithm produces a list of the first 10K prime numbers with the best time complexity? (Section 5.5.1)
 
    - **(a) Sieve of Eratosthenes (Section 5.5.1).**
    - (b) For each number i ∈ [1..10K], test if isPrime(i) is true (Section 5.5.1).
@@ -49,7 +49,7 @@ Please answer the following questions below using your current knowledge about c
    - (a) The complete search mentioned in question 3 can still be used.
    - (b) The naive approach above will not work, use: ____ (Section 7.3.7).
 
-9. You want to enumerate all occurrences of a substring P (of length m) in a (long) stringT (of length n), if any. Both n and m have a maximum of 1M characters.
+9. You want to enumerate all occurrences of a substring P (of length m) in a (long) string T (of length n), if any. Both n and m have a maximum of 1M characters.
 
    - (a) Use the following C++ code snippet: 
 
