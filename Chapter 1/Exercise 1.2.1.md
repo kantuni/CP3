@@ -8,7 +8,7 @@ this book—all the techniques required to solve these problems are discussed in
 
 | UVa   | Title                | Problem Type           | Hint          |
 | ----- | -------------------- | ---------------------- | ------------- |
-| 10360 | Rat Attack           | Complete Search of DP  | Section 3.2   |
+| 10360 | Rat Attack           | Complete Search or DP  | Section 3.2   |
 | 10341 | Solve It             | Mathematics            | Section 3.3   |
 | 11292 | Dragon of Loowater   | Greedy                 | Section 3.4   |
 | 11450 | Wedding Shopping     | DP                     | Section 3.5   |
