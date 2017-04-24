@@ -2,8 +2,6 @@
 
 Please answer the following questions below using your current knowledge about classic algorithms and their time complexities. After you have finished reading this book once, it may be beneficial to attempt this exercise again.
 
-
-
 1. There are n webpages (1 ≤ n ≤ 10M). Each webpage i has a page rank ri. You wantto pick the top 10 pages with the highest page ranks. Which method is better?
 
    - (a)  Load all n webpages’ page rank to memory, sort (Section 2.2) them in descendingpage rank order, obtaining the top 10.
@@ -23,7 +21,7 @@ Please answer the following questions below using your current knowledge about c
    - (f) Binary Indexed (Fenwick) Tree (Section 2.4.4).
    - (g) Suffix Tree (Section 6.6.2) or its alternative, Suffix Array (Section 6.6.4).
 
-4. Given a set S of N points randomly scattered on a 2D plane (2 ≤ N ≤ 1000), findtwo points ∈ S that have the greatest separating Euclidean distance. Is an O(N2)complete search algorithm that tries all possible pairs feasible?
+4. Given a set S of N points randomly scattered on a 2D plane (2 ≤ N ≤ 1000), findtwo points ∈ S that have the greatest separating Euclidean distance. Is an O(N<sup>2</sup>) complete search algorithm that tries all possible pairs feasible?
 
    - **(a) Yes, such complete search is possible.**
    - (b) No, we must find another way. We must use: ____
