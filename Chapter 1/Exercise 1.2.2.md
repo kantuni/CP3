@@ -4,13 +4,13 @@ Please answer the following questions below using your current knowledge about c
 
 1. There are n webpages (1 ≤ n ≤ 10M). Each webpage i has a page rank r<sub>i</sub>. You want to pick the top 10 pages with the highest page ranks. Which method is better?
 
-   - (a)  Load all n webpages’ page rank to memory, sort (Section 2.2) them in descending page rank order, obtaining the top 10.
+   - (a)  Load all n webpages' page rank to memory, sort (Section 2.2) them in descending page rank order, obtaining the top 10.
    - **(b) Use a priority queue data structure (a heap)**
 
 2. Given an M × N integer matrix Q (1 ≤ M, N ≤ 30), determine if there exists a sub-matrix of Q of size A × B (1 ≤ A ≤ M, 1 ≤ B ≤ N) where mean(Q) = 7.
 
    - **(a) Try all possible sub-matrices and check if the mean of each sub-matrix is 7. This algorithm runs in O(M<sup>3</sup> × N<sup>3</sup>).**
-   - (b) Try all possible sub-matrices, but in O(M<sup>2</sup> ×N<sup>2</sup>) with this technique: ____
+   - (b) Try all possible sub-matrices, but in O(M<sup>2</sup> × N<sup>2</sup>) with this technique: ____
 
 3. Given a list L with 10K integers, you need to frequently obtain sum(i, j), i.e. the sum of L[i] + L[i+1] + ...+ L[j]. Which data structure should you use?
 
@@ -26,12 +26,12 @@ Please answer the following questions below using your current knowledge about c
    - **(a) Yes, such complete search is possible.**
    - (b) No, we must find another way. We must use: ____
 
-5. You have to compute the shortest path between two vertices on a weighted Directed Acyclic Graph (DAG) with |V|,|E| ≤ 100K. Which algorithm(s) can be used in a typical programming contest (that is, with a time limit of approximately 3 seconds)?
+5. You have to compute the shortest path between two vertices on a weighted Directed Acyclic Graph (DAG) with |V|, |E| ≤ 100K. Which algorithm(s) can be used in a typical programming contest (that is, with a time limit of approximately 3 seconds)?
 
    - (a) Dynamic Programming (Section 3.5, 4.2.5, & 4.7.1).
    - (b) Breadth First Search (Section 4.2.2 & 4.4.2).
    - **(c) Dijkstra’s (Section 4.4.3).**
-   - (d) Bellman Ford’s (Section 4.4.4).
+   - **(d) Bellman Ford’s (Section 4.4.4).**
    - (e) Floyd Warshall’s (Section 4.5).
 
 6. Which algorithm produces a list of the first 10K prime numbers with the best time complexity? (Section 5.5.1)
