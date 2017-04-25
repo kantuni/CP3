@@ -7,3 +7,4 @@
 - [Exercise 1.1.3<sup>*</sup>](https://github.com/kantuni/CP3/blob/master/Chapter%201/Exercise%201.1.3.md) - **TODO**
 - [Exercise 1.2.1](https://github.com/kantuni/CP3/blob/master/Chapter%201/Exercise%201.2.1.md)
 - [Exercise 1.2.2](https://github.com/kantuni/CP3/blob/master/Chapter%201/Exercise%201.2.2.md)
+- [Exercise 1.2.3](https://github.com/kantuni/CP3/blob/master/Chapter%201/Exercise%201.2.3.md)
