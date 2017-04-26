@@ -46,7 +46,7 @@ Produce working code that is as concise as possible for the following tasks:
    }
    ```
 
-3. Given a date, determine the day of the week (Monday, . . . , Sunday) on that day. (e.g. 9 August 2010—the launch date of the first edition of this book—is a Monday.)
+3. Given a date, determine the day of the week (Monday, . . . , Sunday) on that day. (e.g. 9 August 2010 —the launch date of the first edition of this book — is a Monday.)
 
    **C++**
 
@@ -103,6 +103,27 @@ Produce working code that is as concise as possible for the following tasks:
        int d = calendar.get(Calendar.DAY_OF_WEEK);
        System.out.println(days[d]);
      }
+   }
+   ```
+
+4. Given n random integers, print the distinct (unique) integers in sorted order.
+
+   ```c++
+   #include <iostream>
+   #include <vector>
+   #include <set>
+   #include <iterator>
+   using namespace std;
+
+   int main() {
+     vector<int> random = {4, 8, 2, 3, 1, 4, 1, 3, 7};
+     set<int> s(begin(random), end(random));
+     random.assign(begin(s), end(s));
+     for (int i = 0; i < random.size(); ++i) {
+       cout << random[i] << " ";
+     }
+     cout << "\n";
+     return 0;
    }
    ```
 
