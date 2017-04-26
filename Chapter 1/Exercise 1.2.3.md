@@ -18,6 +18,8 @@ Produce working code that is as concise as possible for the following tasks:
 
 2. Given an integer n (n ≤ 15), print π to n digits after the decimal point (rounded). (e.g. for n = 2, print 3.14; for n = 4, print 3.1416; for n = 5, print 3.14159.)
 
+   **C++**
+
    ```c++
    #include <cstdio>
    #include <math.h>
@@ -29,4 +31,18 @@ Produce working code that is as concise as possible for the following tasks:
      return 0;
    }
    ```
-   
+
+   **Java**
+
+   ```java
+   import java.util.Scanner;
+
+   class Main {
+     public static void main(String[] args) {
+       Scanner scan = new Scanner(System.in);
+       int n = scan.nextInt();
+       System.out.println(String.format("%." + n + "f", Math.PI));
+     }
+   }
+   ```
+
