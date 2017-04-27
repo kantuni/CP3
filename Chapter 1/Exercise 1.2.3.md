@@ -189,13 +189,12 @@ Produce working code that is as concise as possible for the following tasks:
    };
 
    int main() {
-     Birthday p1(3, 1, 1993);
-     Birthday p2(3, 1, 1994);
-     Birthday p3(3, 1, 1992);
+     Birthday p1(1, 1, 1994);
+     Birthday p2(1, 1, 1993);
+     Birthday p3(1, 1, 1992);
      vector<Birthday> bdays = {p1, p2, p3};
      sort(begin(bdays), end(bdays));
      return 0;
    }
    ```
-
-   ​
+   
