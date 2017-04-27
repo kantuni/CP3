@@ -147,10 +147,7 @@ Produce working code that is as concise as possible for the following tasks:
        s.addAll(l);
        l.clear();
        l.addAll(s);
-       for (Integer n : l) {
-         System.out.print(n + " ");
-       }
-       System.out.print("\n");
+       System.out.println(l);
      }
    }
    ```
