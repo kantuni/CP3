@@ -3,7 +3,7 @@
 Produce working code that is as concise as possible for the following tasks:
 
 1. Using Java, read in a double (e.g. 1.4732, 15.324547327, etc.) echo it, but with a minimum field width of 7 and 3 digits after the decimal point (e.g. ss1.473 (where ‘s’ denotes a space), s15.325, etc.)
-   
+
    ```java
    import java.util.Scanner;
 
@@ -121,6 +121,10 @@ Produce working code that is as concise as possible for the following tasks:
      vector<int> random = {4, 6, 2, 3, 1, 4, 1, 3, 5};
      set<int> s(begin(random), end(random));
      random.assign(begin(s), end(s));
+     for (auto n : random) {
+       cout << n << " ";
+     }
+     cout << "\n";
      return 0;
    }
    ```
@@ -143,7 +147,55 @@ Produce working code that is as concise as possible for the following tasks:
        s.addAll(l);
        l.clear();
        l.addAll(s);
+       for (Integer n : l) {
+         System.out.print(n + " ");
+       }
+       System.out.print("\n");
      }
    }
    ```
-   
+
+5. Given the distinct and valid birthdates of n people as triples (DD, MM, YYYY), order them first by ascending birth months (MM), then by ascending birth dates (DD), and finally by ascending age.
+
+   **C++**
+
+   ```c++
+   #include <iostream>
+   #include <vector>
+   #include <iterator>
+   #include <algorithm>
+   using namespace std;
+
+   struct Birthday {
+     int day;
+     int month;
+     int year;
+     
+     Birthday(int d, int m, int y) {
+       this->day = d;
+       this->month = m;
+       this->year = y;
+     }
+     
+     friend bool operator<(const Birthday& a, const Birthday& b) {
+       if (a.month != b.month) {
+         return a.month < b.month;
+       } else if (a.day != b.day) {
+         return a.day < b.day;
+       } else {
+         return a.year < b.year;
+       }
+     }
+   };
+
+   int main() {
+     Birthday p1(3, 1, 1993);
+     Birthday p2(3, 1, 1994);
+     Birthday p3(3, 1, 1992);
+     vector<Birthday> bdays = {p1, p2, p3};
+     sort(begin(bdays), end(bdays));
+     return 0;
+   }
+   ```
+
+   ​
