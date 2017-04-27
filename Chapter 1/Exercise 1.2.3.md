@@ -160,7 +160,6 @@ Produce working code that is as concise as possible for the following tasks:
    **C++**
 
    ```c++
-   #include <iostream>
    #include <vector>
    #include <iterator>
    #include <algorithm>
@@ -197,4 +196,3 @@ Produce working code that is as concise as possible for the following tasks:
      return 0;
    }
    ```
-   
