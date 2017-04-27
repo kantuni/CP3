@@ -108,6 +108,8 @@ Produce working code that is as concise as possible for the following tasks:
 
 4. Given n random integers, print the distinct (unique) integers in sorted order.
 
+   **C++**
+
    ```c++
    #include <iostream>
    #include <vector>
@@ -116,15 +118,34 @@ Produce working code that is as concise as possible for the following tasks:
    using namespace std;
 
    int main() {
-     vector<int> random = {4, 8, 2, 3, 1, 4, 1, 3, 7};
+     vector<int> random = {4, 6, 2, 3, 1, 4, 1, 3, 5};
      set<int> s(begin(random), end(random));
      random.assign(begin(s), end(s));
-     for (int i = 0; i < random.size(); ++i) {
-       cout << random[i] << " ";
-     }
-     cout << "\n";
      return 0;
    }
    ```
 
+   **Java**
+
+   ```java
+   import java.util.ArrayList;
+   import java.util.Arrays;
+   import java.util.Collections;
+   import java.util.Set;
+   import java.util.HashSet;
+
+   class Main {
+     public static void main(String[] args) {
+       Integer[] random = {4, 6, 2, 3, 1, 4, 1, 3, 5};
+       ArrayList<Integer> l = new ArrayList<>();
+       Collections.addAll(l, random);
+       Set<Integer> s = new HashSet<>();
+       s.addAll(l);
+       l.clear();
+       l.addAll(s);
+     }
+   }
+   ```
+
    ​
+
