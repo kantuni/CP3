@@ -258,9 +258,23 @@ Produce working code that is as concise as possible for the following tasks:
 
    int main() {
      vector<int> L = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-     int value = 11;
-     cout << binary_search(begin(L), end(L), value) << "\n";
+     int v = 11;
+     cout << binary_search(begin(L), end(L), v) << "\n";
      return 0;
+   }
+   ```
+
+   **Java**
+
+   ```java
+   import java.util.Arrays;
+
+   class Main {
+     public static void main(String[] args) {
+       int[] L = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+       int v = 3;
+       System.out.println(Arrays.binarySearch(L, v) >= 0);
+     }
    }
    ```
 
