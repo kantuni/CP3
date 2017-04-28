@@ -175,13 +175,13 @@ Produce working code that is as concise as possible for the following tasks:
 
      friend bool operator<(const Birthday& a, const Birthday& b) {
        if (a.month != b.month) {
-         // ascending by month
+         // ascending birth months
          return a.month < b.month;
        } else if (a.day != b.day) {
-         // ascending by day
+         // ascending birth dates
          return a.day < b.day;
        } else {
-         // ascending by age
+         // ascending age
          return a.year > b.year;
        }
      }
@@ -215,13 +215,13 @@ Produce working code that is as concise as possible for the following tasks:
      
      public int compareTo(Birthday other) {
        if (this.month != other.month) {
-         // ascending by month
+         // ascending birth months
          return (this.month > other.month) ? 1 : -1;
        } else if (this.day != other.day) {
-         // ascending by day
+         // ascending birth dates
          return (this.day > other.day) ? 1 : -1;
        } else if (this.year != other.year) {
-         // ascending by age
+         // ascending age
          return (this.year < other.year) ? 1 : -1;
        } else {
          return 0;
@@ -242,6 +242,25 @@ Produce working code that is as concise as possible for the following tasks:
        Arrays.sort(bdays);
        System.out.println(Arrays.toString(bdays));
      }
+   }
+   ```
+
+6. Given a list of sorted integers L of size up to 1M items, determine whether a value vexists in L with no more than 20 comparisons (more details in Section 2.2).
+
+   **C++**
+
+   ```c++
+   #include <iostream>
+   #include <vector>
+   #include <iterator>
+   #include <algorithm>
+   using namespace std;
+
+   int main() {
+     vector<int> L = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+     int value = 11;
+     cout << binary_search(begin(L), end(L), value) << "\n";
+     return 0;
    }
    ```
 
