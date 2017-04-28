@@ -278,4 +278,29 @@ Produce working code that is as concise as possible for the following tasks:
    }
    ```
 
+7. Generate all possible permutations of {‘A’, ‘B’, ‘C’, . . . , ‘J’}, the first N = 10 letters in the alphabet (see Section 3.2.1).
+
+   **C++**
+
+   ```c++
+   #include <iostream>
+   #include <vector>
+   #include <iterator>
+   using namespace std;
+
+   int main() {
+     vector<char> letters = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
+     
+     // include original permutation
+     do {
+       for (int i = 0; i < letters.size(); ++i) {
+         cout << letters[i] << " ";
+       }
+       cout << "\n";
+     } while (next_permutation(begin(letters), end(letters)));
+     
+     return 0;
+   }
+   ```
+
    ​
