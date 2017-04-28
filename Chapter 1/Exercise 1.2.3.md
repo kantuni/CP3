@@ -175,8 +175,10 @@ Produce working code that is as concise as possible for the following tasks:
 
      friend bool operator<(const Birthday& a, const Birthday& b) {
        if (a.month != b.month) {
+         // ascending by month
          return a.month < b.month;
        } else if (a.day != b.day) {
+         // ascending by day
          return a.day < b.day;
        } else {
          // ascending by age
@@ -187,7 +189,7 @@ Produce working code that is as concise as possible for the following tasks:
 
    int main() {
      Birthday p1(1, 1, 1994);
-     Birthday p2(1, 3, 1993);
+     Birthday p2(1, 1, 1993);
      Birthday p3(1, 1, 1992);
      vector<Birthday> bdays = {p1, p2, p3};
      sort(begin(bdays), end(bdays));
