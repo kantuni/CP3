@@ -286,10 +286,12 @@ Produce working code that is as concise as possible for the following tasks:
    #include <iostream>
    #include <vector>
    #include <iterator>
+   #include <algorithm>
    using namespace std;
 
    int main() {
      vector<char> letters = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
+     sort(begin(letters), end(letters));
      
      // include original permutation
      do {
@@ -302,6 +304,7 @@ Produce working code that is as concise as possible for the following tasks:
      return 0;
    }
    ```
+   
    **Java**
 
    ```java
@@ -350,5 +353,3 @@ Produce working code that is as concise as possible for the following tasks:
      }
    }
    ```
-
-   ​
