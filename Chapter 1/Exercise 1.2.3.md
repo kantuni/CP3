@@ -286,12 +286,10 @@ Produce working code that is as concise as possible for the following tasks:
    #include <iostream>
    #include <vector>
    #include <iterator>
-   #include <algorithm>
    using namespace std;
 
    int main() {
      vector<char> letters = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
-     sort(begin(letters), end(letters));
      
      // include original permutation
      do {
@@ -304,3 +302,53 @@ Produce working code that is as concise as possible for the following tasks:
      return 0;
    }
    ```
+   **Java**
+
+   ```java
+   import java.util.ArrayList;
+   import java.util.Collections;
+
+   class Main {
+     public static ArrayList<ArrayList<Character>> permute(ArrayList<Character> array) {
+       if (array.size() == 1) {
+         ArrayList<ArrayList<Character>> last = new ArrayList<>();
+         last.add(array);
+         return last;
+       }
+       
+       ArrayList<ArrayList<Character>> all = new ArrayList<>();
+       for (int i = 0; i < array.size(); ++i) {
+         ArrayList<Character> subarray = new ArrayList<>();
+         for (int j = 0; j < array.size(); ++j) {
+           if (i != j) {
+             subarray.add(array.get(j));
+           }
+         }
+         
+         ArrayList<ArrayList<Character>> permutations = permute(subarray);
+         for (int j = 0; j < permutations.size(); ++j) {
+           permutations.get(j).add(0, array.get(i));
+           all.add(permutations.get(j));
+         }
+       }
+       
+       return all;
+     }
+     
+     public static void main(String[] args) {
+       ArrayList<Character> letters = new ArrayList<>();
+       for (char c = 'A'; c <= 'J'; ++c) {
+         letters.add(c);
+       }
+       Collections.sort(letters);
+       
+       // generate and print all permutations
+       ArrayList<ArrayList<Character>> permutations = permute(letters);
+       for (ArrayList<Character> p : permutations) {
+         System.out.println(p);
+       }
+     }
+   }
+   ```
+
+   ​
