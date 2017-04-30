@@ -1,6 +1,5 @@
 ### Exercise 1.1.2
-Analyze the time complexity of the naive complete search solution by
-uncompetitive programmer A above to understand why it receives the TLE verdict!
+Analyze the time complexity of the naive complete search solution by uncompetitive programmer A above to understand why it receives the TLE verdict!
 
 ### Answer
 Running time of the naive complete search is
