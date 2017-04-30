@@ -1,8 +1,6 @@
 ### Exercise 1.2.1
 
-Read the UVa [47] problems shown in Table 1.3 and determine their problem
-types. Two of them have been identified for you. Filling this table is easy after mastering
-this book—all the techniques required to solve these problems are discussed in this book.
+Read the UVa [47] problems shown in Table 1.3 and determine their problem types. Two of them have been identified for you. Filling this table is easy after mastering this book—all the techniques required to solve these problems are discussed in this book.
 
 ### Answer
 
