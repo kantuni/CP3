@@ -304,7 +304,7 @@ Produce working code that is as concise as possible for the following tasks:
      return 0;
    }
    ```
-   
+
    **Java**
 
    ```java
@@ -355,3 +355,24 @@ Produce working code that is as concise as possible for the following tasks:
      }
    }
    ```
+
+8. ​
+
+9. ​
+
+10. Let’s define a ‘special word’ as a lowercase alphabet followed by two consecutive digits. Given a string, replace all ‘special words’ of length 3 with 3 stars “\*\*\*”, e.g. 
+  S = “line: a70 and z72 will be replaced, aa24 and a872 will not” 
+  should be transformed into: 
+  S = “line: \*\*\* and \*\*\* will be replaced, aa24 and a872 will not”.
+
+  ```java
+  class Main {
+    public static void main(String[] args) {
+      String S = "line: a70 and z72 will be replaced, aa24 and a872 will not";
+      S = S.replaceAll("\\s[a-z][0-9]{2}\\s", " *** ");
+      System.out.println(S);
+    }
+  }
+  ```
+
+
