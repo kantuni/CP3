@@ -356,9 +356,9 @@ Produce working code that is as concise as possible for the following tasks:
    }
    ```
 
-8. ​
+8. 
 
-9. ​
+9. 
 
 10. Let’s define a ‘special word’ as a lowercase alphabet followed by two consecutive digits. Given a string, replace all ‘special words’ of length 3 with 3 stars “\*\*\*”, e.g. 
   S = “line: a70 and z72 will be replaced, aa24 and a872 will not” 
@@ -374,5 +374,3 @@ Produce working code that is as concise as possible for the following tasks:
     }
   }
   ```
-
-
