@@ -24,48 +24,9 @@ Produce working code that is as concise as possible for the following tasks:
 
 4. Given n random integers, print the distinct (unique) integers in sorted order.
 
-   **C++**
-
-   ```c++
-   #include <iostream>
-   #include <vector>
-   #include <set>
-   #include <iterator>
-   using namespace std;
-
-   int main() {
-     vector<int> random = {4, 6, 2, 3, 1, 4, 1, 3, 5};
-     set<int> s(begin(random), end(random));
-     random.assign(begin(s), end(s));
-     for (auto n : random) {
-       cout << n << " ";
-     }
-     cout << "\n";
-     return 0;
-   }
-   ```
-
-   **Java**
-
-   ```java
-   import java.util.ArrayList;
-   import java.util.Arrays;
-   import java.util.Collections;
-   import java.util.Set;
-   import java.util.HashSet;
-
-   class Main {
-     public static void main(String[] args) {
-       Integer[] random = {4, 6, 2, 3, 1, 4, 1, 3, 5};
-       ArrayList<Integer> l = new ArrayList<>();
-       Collections.addAll(l, random);
-       Set<Integer> s = new HashSet<>();
-       s.addAll(l);
-       l.clear();
-       l.addAll(s);
-       System.out.println(l);
-     }
-   }
+   ```shell
+   g++ -std=c++14 4.cpp
+   javac 4.java
    ```
 
 5. Given the distinct and valid birthdates of n people as triples (DD, MM, YYYY), order them first by ascending birth months (MM), then by ascending birth dates (DD), and finally by ascending age.
