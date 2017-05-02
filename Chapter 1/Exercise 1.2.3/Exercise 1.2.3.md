@@ -10,7 +10,7 @@ Produce working code that is as concise as possible for the following tasks:
 
 2. Given an integer n (n ≤ 15), print π to n digits after the decimal point (rounded). (e.g. for n = 2, print 3.14; for n = 4, print 3.1416; for n = 5, print 3.14159.)
 
-   ```bash
+   ```shell
    g++ -std=c++14 2.cpp
    ./a.out
 
