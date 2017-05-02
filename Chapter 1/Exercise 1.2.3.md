@@ -356,7 +356,7 @@ Produce working code that is as concise as possible for the following tasks:
    }
    ```
 
-8. 
+8. Generate all possible subsets of {0, 1, 2, . . . , N - 1}, for N = 20 (see Section 3.2.1).
 
 9. 
 
