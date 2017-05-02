@@ -60,80 +60,12 @@ Produce working code that is as concise as possible for the following tasks:
 
 7. Generate all possible permutations of {‘A’, ‘B’, ‘C’, . . . , ‘J’}, the first N = 10 letters in the alphabet (see Section 3.2.1).
 
-   **C++**
+   ```shell
+   g++ -std=c++14 7.cpp
+   ./a.out
 
-   ```c++
-   #include <iostream>
-   #include <vector>
-   #include <iterator>
-   #include <algorithm>
-   using namespace std;
-
-   int main() {
-     vector<char> letters = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
-     sort(begin(letters), end(letters));
-     
-     // include original permutation
-     do {
-       for (int i = 0; i < letters.size(); ++i) {
-         cout << letters[i] << " ";
-       }
-       cout << "\n";
-     } while (next_permutation(begin(letters), end(letters)));
-     
-     return 0;
-   }
-   ```
-
-   **Java**
-
-   ```java
-   import java.util.ArrayList;
-   import java.util.Collections;
-
-   class Permutations extends ArrayList<ArrayList<Character>> {}
-
-   class Main {
-     public static Permutations permute(ArrayList<Character> array) {
-       if (array.size() == 1) {
-         Permutations last = new Permutations();
-         last.add(array);
-         return last;
-       }
-
-       Permutations all = new Permutations();
-       for (int i = 0; i < array.size(); ++i) {
-         ArrayList<Character> subarray = new ArrayList<>();
-         for (int j = 0; j < array.size(); ++j) {
-           if (i != j) {
-             subarray.add(array.get(j));
-           }
-         }
-
-         Permutations current = permute(subarray);
-         for (int j = 0; j < current.size(); ++j) {
-           current.get(j).add(0, array.get(i));
-           all.add(current.get(j));
-         }
-       }
-
-       return all;
-     }
-
-     public static void main(String[] args) {
-       ArrayList<Character> letters = new ArrayList<>();
-       for (char c = 'A'; c <= 'C'; ++c) {
-         letters.add(c);
-       }
-       Collections.sort(letters);
-
-       // generate and print all permutations
-       Permutations all = permute(letters);
-       for (ArrayList<Character> p : all) {
-         System.out.println(p);
-       }
-     }
-   }
+   javac 7.java
+   java Main
    ```
 
 8. Generate all possible subsets of {0, 1, 2, . . . , N-1}, for N = 20 (see Section 3.2.1).
