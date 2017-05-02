@@ -4,46 +4,15 @@ Produce working code that is as concise as possible for the following tasks:
 
 1. Using Java, read in a double (e.g. 1.4732, 15.324547327, etc.) echo it, but with a minimum field width of 7 and 3 digits after the decimal point (e.g. ss1.473 (where ‘s’ denotes a space), s15.325, etc.)
 
-   ```java
-   import java.util.Scanner;
-
-   class Main {
-     public static void main(String[] args) {
-       Scanner scan = new Scanner(System.in);
-       double d = scan.nextDouble();
-       System.out.println(String.format("%7.3f", d));
-     }
-   }
+   ```shell
+   javac 1.java
    ```
 
 2. Given an integer n (n ≤ 15), print π to n digits after the decimal point (rounded). (e.g. for n = 2, print 3.14; for n = 4, print 3.1416; for n = 5, print 3.14159.)
 
-   **C++**
-
-   ```c++
-   #include <cstdio>
-   #include <math.h>
-
-   int main() {
-     int n;
-     scanf("%d", &n);
-     printf("%.*f\n", n, M_PI);
-     return 0;
-   }
-   ```
-
-   **Java**
-
-   ```java
-   import java.util.Scanner;
-
-   class Main {
-     public static void main(String[] args) {
-       Scanner scan = new Scanner(System.in);
-       int n = scan.nextInt();
-       System.out.println(String.format("%." + n + "f", Math.PI));
-     }
-   }
+   ```bash
+   g++ -std=c++14 2.cpp
+   javac 2.java
    ```
 
 3. Given a date, determine the day of the week (Monday, . . . , Sunday) on that day. (e.g. 9 August 2010 —the launch date of the first edition of this book — is a Monday.)
@@ -398,7 +367,7 @@ Produce working code that is as concise as possible for the following tasks:
       return 0;
     }
     ```
-    
+
     **Java**
 
     ```java
@@ -438,31 +407,31 @@ Produce working code that is as concise as possible for the following tasks:
 
 10. Let's define a 'special word' as a lowercase alphabet followed by two consecutive digits. Given a string, replace all 'special words' of length 3 with 3 stars "\*\*\*", e.g. S = "line: a70 and z72 will be replaced, aa24 and a872 will not" should be transformed into: S = "line: \*\*\* and \*\*\* will be replaced, aa24 and a872 will not".
 
-   **C++**
+  **C++**
 
-   ```c++
-   #include <iostream>
-   #include <string>
-   #include <regex>
-   using namespace std;
+  ```c++
+  #include <iostream>
+  #include <string>
+  #include <regex>
+  using namespace std;
 
-   int main() {
-     string S = "line: a70 and z72 will be replaced, aa24 and a872 will not";
-     regex pattern("\\s[a-z][0-9]{2}\\s");
-     S = regex_replace(S, pattern, " *** ");
-     cout << S << "\n";
-     return 0;
-   }
-   ```
+  int main() {
+    string S = "line: a70 and z72 will be replaced, aa24 and a872 will not";
+    regex pattern("\\s[a-z][0-9]{2}\\s");
+    S = regex_replace(S, pattern, " *** ");
+    cout << S << "\n";
+    return 0;
+  }
+  ```
 
-   **Java**
+  **Java**
 
-   ```java
-   class Main {
-     public static void main(String[] args) {
-       String S = "line: a70 and z72 will be replaced, aa24 and a872 will not";
-       S = S.replaceAll("\\s[a-z][0-9]{2}\\s", " *** ");
-       System.out.println(S);
-     }
-   }
-   ```
+  ```java
+  class Main {
+    public static void main(String[] args) {
+      String S = "line: a70 and z72 will be replaced, aa24 and a872 will not";
+      S = S.replaceAll("\\s[a-z][0-9]{2}\\s", " *** ");
+      System.out.println(S);
+    }
+  }
+  ```
