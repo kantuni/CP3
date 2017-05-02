@@ -365,6 +365,8 @@ Produce working code that is as concise as possible for the following tasks:
   should be transformed into:  
   S = "line: \*\*\* and \*\*\* will be replaced, aa24 and a872 will not".
 
+  **Java**
+  
   ```java
   class Main {
     public static void main(String[] args) {
