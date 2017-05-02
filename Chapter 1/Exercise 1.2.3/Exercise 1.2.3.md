@@ -70,83 +70,19 @@ Produce working code that is as concise as possible for the following tasks:
 
 8. Generate all possible subsets of {0, 1, 2, . . . , N-1}, for N = 20 (see Section 3.2.1).
 
-    **C++**
+    ```shell
+    g++ -std=c++14 8.cpp
+    ./a.out
 
-    ```c++
-    #include <iostream>
-    #include <vector>
-    #include <bitset>
-    #include <math.h>
-    using namespace std;
-
-    int main() {
-      const int N = 20;
-      
-      vector<int> s;
-      for (int i = 0; i < N; ++i) {
-        s.push_back(i);
-      }
-      
-      vector<vector<int>> all;
-      for (int i = 0; i < pow(2, N); ++i) {
-        string binary = bitset<N>(i).to_string();
-        vector<int> subset;
-        for (int j = 0; j < binary.length(); ++j) {
-          if (binary[j] == '1') {
-            subset.push_back(s[j]);
-          }
-        }
-        all.push_back(subset);
-      }
-      
-      // print all subsets
-      for (int i = 0; i < all.size(); ++i) {
-        for (int j = 0; j < all[i].size(); ++j) {
-          cout << all[i][j] << " ";
-        }
-        cout << "\n";
-      }
-      
-      return 0;
-    }
-    ```
-
-    **Java**
-
-    ```java
-    import java.util.ArrayList;
-
-    class Main {
-      public static void main(String[] args) {
-        int N = 20;
-        
-        int[] s = new int[N];
-        for (int i = 0; i < N; ++i) {
-          s[i] = i;
-        }
-        
-        ArrayList<ArrayList<Integer>> all = new ArrayList<>();
-        for (int i = 0; i < Math.pow(2, N); ++i) {
-          String binary = Integer.toBinaryString(i);
-          binary = String.format("%" + N + "s", binary).replace(' ', '0');
-          ArrayList<Integer> subset = new ArrayList<>();
-          for (int j = 0; j < binary.length(); ++j) {
-            if (binary.charAt(j) == '1') {
-              subset.add(s[j]);
-            }
-          }
-          all.add(subset);
-        }
-        
-        // print all subsets
-        for (ArrayList<Integer> subset : all) {
-          System.out.println(subset);
-        }
-      }
-    }
+    javac 8.java
+    java Main
     ```
 
 9. Given a string that represents a base X number, convert it to an equivalent string in base Y, 2 ≤ X, Y ≤ 36. For example: “FF” in base X = 16 (hexadecimal) is “255” in base Y1 = 10 (decimal) and “11111111” in base Y2 = 2 (binary). See Section 5.3.2.
+
+  ```shell
+
+  ```
 
 10. Let's define a 'special word' as a lowercase alphabet followed by two consecutive digits. Given a string, replace all 'special words' of length 3 with 3 stars "\*\*\*", e.g. S = "line: a70 and z72 will be replaced, aa24 and a872 will not" should be transformed into: S = "line: \*\*\* and \*\*\* will be replaced, aa24 and a872 will not".
 
