@@ -7,4 +7,3 @@ class Main {
     System.out.println(String.format("%7.3f", d));
   }
 }
-
