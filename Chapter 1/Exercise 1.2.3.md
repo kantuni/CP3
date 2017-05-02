@@ -358,35 +358,76 @@ Produce working code that is as concise as possible for the following tasks:
 
 8. Generate all possible subsets of {0, 1, 2, . . . , N-1}, for N = 20 (see Section 3.2.1).
 
+    **C++**
+
+    ```c++
+    #include <iostream>
+    #include <vector>
+    #include <bitset>
+    #include <math.h>
+    using namespace std;
+
+    int main() {
+      const int N = 20;
+      
+      vector<int> s;
+      for (int i = 0; i < N; ++i) {
+        s.push_back(i);
+      }
+      
+      vector<vector<int>> all;
+      for (int i = 0; i < pow(2, N); ++i) {
+        string binary = bitset<N>(i).to_string();
+        vector<int> subset;
+        for (int j = 0; j < binary.length(); ++j) {
+          if (binary[j] == '1') {
+            subset.push_back(s[j]);
+          }
+        }
+        all.push_back(subset);
+      }
+      
+      // print all subsets
+      for (int i = 0; i < all.size(); ++i) {
+        for (int j = 0; j < all[i].size(); ++j) {
+          cout << all[i][j] << " ";
+        }
+        cout << "\n";
+      }
+      
+      return 0;
+    }
+    ```
+
 9. Given a string that represents a base X number, convert it to an equivalent string in base Y, 2 ≤ X, Y ≤ 36. For example: “FF” in base X = 16 (hexadecimal) is “255” in base Y1 = 10 (decimal) and “11111111” in base Y2 = 2 (binary). See Section 5.3.2.
 
 10. Let's define a 'special word' as a lowercase alphabet followed by two consecutive digits. Given a string, replace all 'special words' of length 3 with 3 stars "\*\*\*", e.g. S = "line: a70 and z72 will be replaced, aa24 and a872 will not" should be transformed into: S = "line: \*\*\* and \*\*\* will be replaced, aa24 and a872 will not".
 
-      **C++**
+    **C++**
 
-      ```c++
-      #include <iostream>
-      #include <string>
-      #include <regex>
-      using namespace std;
+    ```c++
+    #include <iostream>
+    #include <string>
+    #include <regex>
+    using namespace std;
 
-      int main() {
-        string S = "line: a70 and z72 will be replaced, aa24 and a872 will not";
-        regex pattern("\\s[a-z][0-9]{2}\\s");
-        S = regex_replace(S, pattern, " *** ");
-        cout << S << "\n";
-        return 0;
+    int main() {
+      string S = "line: a70 and z72 will be replaced, aa24 and a872 will not";
+      regex pattern("\\s[a-z][0-9]{2}\\s");
+      S = regex_replace(S, pattern, " *** ");
+      cout << S << "\n";
+      return 0;
+    }
+    ```
+
+    **Java**
+
+    ```java
+    class Main {
+      public static void main(String[] args) {
+        String S = "line: a70 and z72 will be replaced, aa24 and a872 will not";
+        S = S.replaceAll("\\s[a-z][0-9]{2}\\s", " *** ");
+        System.out.println(S);
       }
-      ```
-      
-      **Java**
-      
-      ```java
-      class Main {
-        public static void main(String[] args) {
-          String S = "line: a70 and z72 will be replaced, aa24 and a872 will not";
-          S = S.replaceAll("\\s[a-z][0-9]{2}\\s", " *** ");
-          System.out.println(S);
-        }
-      }
-      ```
+    }
+    ```
