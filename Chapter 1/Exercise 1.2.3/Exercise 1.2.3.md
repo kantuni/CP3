@@ -5,6 +5,9 @@ Produce working code that is as concise as possible for the following tasks:
 1. Using Java, read in a double (e.g. 1.4732, 15.324547327, etc.) echo it, but with a minimum field width of 7 and 3 digits after the decimal point (e.g. ss1.473 (where ‘s’ denotes a space), s15.325, etc.)
 
       ```shell
+      g++ -std=c++14 1.cpp
+      ./a.out
+
       javac 1.java
       java Main
       ```
@@ -82,16 +85,21 @@ Produce working code that is as concise as possible for the following tasks:
 9. Given a string that represents a base X number, convert it to an equivalent string in base Y, 2 ≤ X, Y ≤ 36. For example: “FF” in base X = 16 (hexadecimal) is “255” in base Y1 = 10 (decimal) and “11111111” in base Y2 = 2 (binary). See Section 5.3.2.
 
       ```shell
+      g++ -std=c++14 9.cpp
+      ./a.out
+
       javac 9.java
       java Main
       ```
 
-10. Let's define a 'special word' as a lowercase alphabet followed by two consecutive digits. Given a string, replace all 'special words' of length 3 with 3 stars "\*\*\*", e.g. S = "line: a70 and z72 will be replaced, aa24 and a872 will not" should be transformed into: S = "line: \*\*\* and \*\*\* will be replaced, aa24 and a872 will not".
+10. Let\'s define a 'special word' as a lowercase alphabet followed by two consecutive digits. Given a string, replace all 'special words' of length 3 with 3 stars "\*\*\*", e.g. S = "line: a70 and z72 will be replaced, aa24 and a872 will not" should be transformed into: S = "line: \*\*\* and \*\*\* will be replaced, aa24 and a872 will not".
 
-      ```shell
-      g++ -std=c++14 10.cpp
-      ./a.out
+    ```shell
+    g++ -std=c++14 10.cpp
+    ./a.out
 
-      javac 10.java
-      java Main
-      ```
+    javac 10.java
+    java Main
+    ```
+
+11. Given a valid mathematical expression involving '+', '-', '*', '/', '(', and ')' in a single line, evaluate that expression. (e.g. a rather complicated but valid expression 3 + (8 -7.5) * 10 / 5 - (2 + 5 * 7) should produce -33.0 when evaluated with standard operator precedence.)
