@@ -103,3 +103,9 @@ Produce working code that is as concise as possible for the following tasks:
     ```
 
 11. Given a valid mathematical expression involving '+', '-', '*', '/', '(', and ')' in a single line, evaluate that expression. (e.g. a rather complicated but valid expression 3 + (8 -7.5) * 10 / 5 - (2 + 5 * 7) should produce -33.0 when evaluated with standard operator precedence.)
+
+    ```shell
+    javac 1.java
+    java Main
+    ```
+    
