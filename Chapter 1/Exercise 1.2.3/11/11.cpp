@@ -1,40 +1,14 @@
 #include <iostream>
-#include <ctype.h>
 #include <string>
+#include <ctype.h>
 #include <iterator>
 #include <algorithm>
 using namespace std;
 
-string evaluate(string e) {
-  // remove spaces
-  e.erase(remove(begin(e), end(e), ' '), end(e));
-  cout << e << "\n";
-  
-  // remove first and last parentheses
-  if (e[0] == '(' && e[e.length() - 1] == ')') {
-    e = e.substr(1, e.length() - 2);
-  }
-  
-  // evaluate ()
-  int start = -1, end = -1;
+string calculate(string e, char operation) {
+  int start, end;
   for (int i = 0; i < e.length(); ++i) {
-    if (e[i] == '(') {
-      start = i;
-    }
-    
-    if (e[i] == ')') {
-      end = i;
-      break;
-    }
-  }
-  
-  if (start != -1 && end != -1) {
-    e = e.substr(0, start) + evaluate(e.substr(start, end - start + 1)) + e.substr(end + 1);
-  }
-  
-  // evaluate *
-  for (int i = 0; i < e.length(); ++i) {
-    if (e[i] == '*') {
+    if (e[i] == operation) {
       string left;
       for (int j = i - 1; j >= 0; --j) {
         if (!isdigit(e[j]) && e[j] != '.') {
@@ -67,14 +41,55 @@ string evaluate(string e) {
       
       double l = stod(left);
       double r = stod(right);
-      e = e.substr(0, start) + to_string(l * r) + e.substr(end);
+      
+      double answer = l + r;
+      answer = (operation == '-') ? l - r : answer;
+      answer = (operation == '*') ? l * r : answer;
+      answer = (operation == '/') ? l / r : answer;
+      
+      e = e.substr(0, start) + to_string(answer) + e.substr(end);
     }
   }
   
-  // evaluate /
-  // evaluate +
-  // evaluate -
+  return e;
+}
+
+string evaluate(string e) {
+  // remove spaces
+  e.erase(remove(begin(e), end(e), ' '), end(e));
   
+  // remove first and last parentheses
+  if (e[0] == '(' && e[e.length() - 1] == ')') {
+    e = e.substr(1, e.length() - 2);
+  }
+  
+  // evaluate '()'
+  bool found = true;
+  while (found) {
+    found = false;
+    int start = -1, end = -1;
+    for (int i = 0; i < e.length(); ++i) {
+      if (e[i] == '(') {
+        found = true;
+        start = i;
+      }
+      
+      if (e[i] == ')') {
+        end = i;
+        break;
+      }
+    }
+    
+    if (found) {
+      e = e.substr(0, start) + evaluate(e.substr(start, end - start + 1)) + e.substr(end + 1);
+    }
+  }
+  
+  // evaluate '*', '/', '+', '-' in this order
+  e = calculate(e, '*');
+  e = calculate(e, '/');
+  e = calculate(e, '+');
+  e = calculate(e, '-');
   return e;
 }
 
