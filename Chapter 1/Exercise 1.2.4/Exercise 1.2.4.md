@@ -44,5 +44,3 @@ Situational awareness (mostly applicable in the ICPC setting — this is not as 
    - (a) Abandon the problem with the WA code, switch to the other problem in an attempt to solve one more problem.
    - (b) Insist that you have to debug the WA code. There is not enough time to start working on a new problem.
    - **(c) (In ICPC): Print the WA code. Ask two other team members to scrutinize it while you switch to that other problem in an attempt to solve two more problems.**
-
-
