@@ -17,6 +17,7 @@ class Main {
       try {
         line = reader.readLine();
       } catch (IOException e) {
+        System.out.println(e.getMessage());
         e.printStackTrace();
       }
       return line;
@@ -33,6 +34,7 @@ class Main {
       Object result = engine.eval(expression);
       System.out.println(result);
     } catch (Exception e) {
+      System.out.println(e.getMessage());
       e.printStackTrace();
     }
   }
