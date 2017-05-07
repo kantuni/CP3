@@ -11,4 +11,3 @@ g++ -std=c++14 1.cpp
 javac 1.java
 java Main
 ```
-
