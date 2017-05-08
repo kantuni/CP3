@@ -10,3 +10,4 @@
 - [Exercise 1.2.3](https://github.com/kantuni/CP3/blob/master/Chapter%201/Exercise%201.2.3)
 - [Exercise 1.2.4](https://github.com/kantuni/CP3/blob/master/Chapter%201/Exercise%201.2.4)
 - [Exercise 1.3.1*](https://github.com/kantuni/CP3/tree/master/Chapter%201/Exercise%201.3.1)
+- [Exercise 1.3.2*](https://github.com/kantuni/CP3/tree/master/Chapter%201/Exercise%201.3.2)
