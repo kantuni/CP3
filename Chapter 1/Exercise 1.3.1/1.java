@@ -15,7 +15,6 @@ class Main {
       try {
         line = reader.readLine();
       } catch (IOException e) {
-        System.out.println(e.getMessage());
         e.printStackTrace();
       }
       return line;
@@ -25,6 +24,7 @@ class Main {
   public static void main(String[] args) {
     FastReader reader = new FastReader();
     String line = reader.nextLine();
+    
     while (line != null && line.length() != 0) {
       String[] tokens = line.split(" ");
       int total = 0;
