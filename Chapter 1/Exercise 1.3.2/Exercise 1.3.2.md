@@ -27,4 +27,7 @@ java Main
 ```shell
 g++ -std=c++14 4.cpp
 ./a.out
+
+javac 4.java
+java Main
 ```
