@@ -13,23 +13,37 @@ class Main {
       tokenizer = new StringTokenizer("");
     }
     
-    String next() {
+    boolean hasNext() throws IOException {
+      String line = reader.readLine();
+      if (line != null) {
+        tokenizer = new StringTokenizer(line);
+        return true;
+      }
+      return false;
+    }
+    
+    String next() throws IOException {
       while (!tokenizer.hasMoreElements()) {
-        try {
-          tokenizer = new StringTokenizer(reader.readLine());
-        } catch (IOException e) {
-          e.printStackTrace();
-        }
+        tokenizer = new StringTokenizer(reader.readLine());
       }
       return tokenizer.nextToken();
     }
     
-    int nextInt() {
+    int nextInt() throws IOException {
       return Integer.parseInt(next());
     }
   }
   
   public static void main(String[] args) {
     FastReader reader = new FastReader();
+    try {
+      while (reader.hasNext()) {
+        int a = reader.nextInt();
+        int b = reader.nextInt();
+        System.out.println(a + b);
+      }
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
   }
 }
