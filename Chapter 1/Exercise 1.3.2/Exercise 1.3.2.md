@@ -39,3 +39,8 @@ g++ -std=c++14 5.cpp
 javac 5.java
 java Main
 ```
+
+```shell
+g++ -std=c++14 6.cpp
+./a.out
+```
