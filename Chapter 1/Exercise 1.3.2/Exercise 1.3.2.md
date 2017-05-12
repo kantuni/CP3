@@ -23,3 +23,8 @@ g++ -std=c++14 3.cpp
 javac 3.java
 java Main
 ```
+
+```shell
+g++ -std=c++14 4.cpp
+./a.out
+```
