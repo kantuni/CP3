@@ -12,3 +12,4 @@
 - [Exercise 1.3.1*](https://github.com/kantuni/CP3/tree/master/Chapter%201/Exercise%201.3.1)
 - [Exercise 1.3.2*](https://github.com/kantuni/CP3/tree/master/Chapter%201/Exercise%201.3.2)
 - [11172](https://github.com/kantuni/UVa/tree/master/11172) - Relational Operators
+- [11498](https://github.com/kantuni/UVa/tree/master/11498) - Division of Nlogonia
