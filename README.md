@@ -15,3 +15,4 @@
 - [11498](https://github.com/kantuni/UVa/tree/master/11498) - Division of Nlogonia - **Accepted**
 - [11727](https://github.com/kantuni/UVa/tree/master/11727) - Cost Cutting - **Accepted**
 - [10114](https://github.com/kantuni/UVa/tree/master/10114) - Loansome Car Buyer - **Accepted**
+- [11559](https://github.com/kantuni/UVa/tree/master/11559) - Event Planning - **Accepted**
