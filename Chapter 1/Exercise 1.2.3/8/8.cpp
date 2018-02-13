@@ -11,7 +11,7 @@ int main() {
     s.push_back(i);
   }
   
-  vector<vector<int>> all;
+  vector<vector<int> > all;
   for (int i = 0; i < pow(2, N); ++i) {
     string binary = bitset<N>(i).to_string();
     vector<int> subset;
