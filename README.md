@@ -2,7 +2,10 @@
 
 ## Chapter 1: Introduction
 
-A gentler intro: Anatomy of programming contest problem; Parsing Input/Formatting Output for beginners; Common errors; Common shortcut tricks
+A gentler intro: Anatomy of programming contest problem  
+Parsing Input/Formatting Output for beginners  
+Common errors  
+Common shortcut tricks  
 
 ### Exercises
 
