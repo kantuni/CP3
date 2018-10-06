@@ -3,7 +3,7 @@
 ## Chapter 1: Introduction
 
 A gentler intro: Anatomy of programming contest problem  
-Parsing Input/Formatting Output for beginners  
+Parsing Input / Formatting Output for beginners  
 Common errors  
 Common shortcut tricks  
 
