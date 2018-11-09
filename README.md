@@ -2,11 +2,6 @@
 
 ## Chapter 1: Introduction
 
-A gentler intro: Anatomy of programming contest problem  
-Parsing Input / Formatting Output for beginners  
-Common errors  
-Common shortcut tricks  
-
 ### Exercises
 
 - [x] [Exercise 1.1.1](https://github.com/kantuni/CP3/tree/master/Chapter%201/Exercise%201.1.1)
