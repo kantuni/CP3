@@ -29,7 +29,7 @@ class Main {
     FastReader reader = new FastReader();
     try {
       int T = reader.nextInt();
-      for (int t = 0; t < T; ++t) {
+      for (int t = 0; t < T; t++) {
         int a = reader.nextInt();
         int b = reader.nextInt();
         System.out.println(a + b);
