@@ -28,7 +28,7 @@ class Main {
     while (line != null && line.length() != 0) {
       String[] tokens = line.split(" ");
       int total = 0;
-      for (int i = 0; i < tokens.length; ++i) {
+      for (int i = 0; i < tokens.length; i++) {
         total += Integer.parseInt(tokens[i]);
       }
       System.out.println(total);
