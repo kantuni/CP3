@@ -11,7 +11,7 @@ string convert(string n, int from, int to) {
   string converted = "";
   
   while (decimal % to != 0) {
-    converted += to_string(decimal % to);
+    converted += digits[decimal % to];
     decimal -= (decimal % to);
     decimal /= to;
   }
@@ -21,8 +21,8 @@ string convert(string n, int from, int to) {
 }
 
 int main() {
-  int x = 16, y1 = 10, y2 = 2;
-  string xn = "FF";
+  int x = 10, y1 = 16, y2 = 2;
+  string xn = "255";
   cout << convert(xn, x, y1) << "\n";
   cout << convert(xn, x, y2) << "\n";
   return 0;
